@@ -3,8 +3,8 @@ const { Client, Util} = require('discord.js');
 const config = require("./config.json");
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
-const devs = ['492380514309636114']
-const developers = ['492380514309636114'];
+const devs = ['564414567946387487']
+const developers = ['564414567946387487'];
 const prefix = "1"
 
 const client = new Client({ disableEveryone: true});
@@ -402,7 +402,7 @@ function play(guild, song){
 }
 
 client.on('message', message => {
-	var prefix = "-"
+	var prefix = "1"
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
  
@@ -437,7 +437,7 @@ if (message.content.startsWith(prefix + 'setavatar')) {
 });
 
 client.on('message', message => {
-	var prefix = "-"
+	var prefix = "1"
 if (message.content.startsWith(prefix + 'help')) { 
     let pages = [`
 
